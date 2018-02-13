@@ -1,5 +1,12 @@
 Cloudera Manager RESTful API Clients
 ====================================
+see branch: cm5-5.14.0
+that branch contains patch for
+
+ApiObjectMapper.java to use newer version 2.7.2 of Jackson to be compatible with Azure dependencies. There is an outstanding pull request unprocessed 
+
+ https://github.com/cloudera/cm_api/pull/63/commits/76ef10e0834f67ab5f93169e4c8d56d14eb69993"
+
 
 > [Cloudera Manager](http://www.cloudera.com/products-services/tools/) is the market-leading management platform 
 > for [CDH](http://www.cloudera.com/hadoop/). As the industry’s first end-to-end 
