@@ -263,7 +263,7 @@ public class ApiHost {
   public void setMaintenanceOwners(List<ApiEntityType> maintenanceOwners) {
     this.maintenanceOwners = (null == maintenanceOwners)
                                ? new ArrayList<ApiEntityType>()
-                               : Lists.newArrayList(maintenanceOwners);
+                               : maintenanceOwners; // DST: Lists.newArrayList(maintenanceOwners);
   }
 
   @XmlElement

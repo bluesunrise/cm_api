@@ -5,10 +5,11 @@
   <groupId>com.cloudera.api</groupId>
   <artifactId>cloudera-manager-api</artifactId>
   <name>Cloudera Manager API</name>
-  <version>5.14.0-2018-02-13</version>
+  <version>cm5-5.14.0-java8</version>
 
   <properties>
-    <cxf.version>2.7.7</cxf.version>
+    <!--<cxf.version>2.7.7</cxf.version>-->
+     <cxf.version>3.2.5</cxf.version>
     <guava.version>14.0</guava.version>
     <jackson2.version>2.7.2</jackson2.version>
     <joda.version>2.1</joda.version>
@@ -304,6 +305,24 @@
       <artifactId>cxf-rt-frontend-jaxrs</artifactId>
       <version>${cxf.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-rs-client</artifactId>
+      <version>${cxf.version}</version>
+    </dependency>
+    <!-- DST: (2) remove me -->
+    <!--<dependency>-->
+      <!--<groupId>javax.xml.ws</groupId>-->
+      <!--<artifactId>jaxws-api</artifactId>-->
+      <!--<version>2.0</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>com.sun.xml.bind</groupId>-->
+      <!--<artifactId>jaxb-impl</artifactId>-->
+      <!--&lt;!&ndash;<version>2.3.0.1</version>&ndash;&gt;-->
+      <!--<version>2.2.6</version>-->
+    <!--</dependency>-->
+
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>

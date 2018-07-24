@@ -135,7 +135,7 @@ public class ApiUser {
 
   public void setRoles(Set<String> roles) {
     if (roles != null) {
-      this.roles = Sets.newHashSet(roles);
+      this.roles = roles; // DST: Sets.newHashSet(roles);
     } else {
       this.roles = null;
     }

@@ -267,7 +267,7 @@ public class ApiService {
   public void setMaintenanceOwners(List<ApiEntityType> maintenanceOwners) {
     this.maintenanceOwners = (null == maintenanceOwners)
                                ? new ArrayList<ApiEntityType>()
-                               : Lists.newArrayList(maintenanceOwners);
+                               : maintenanceOwners; // DST: Lists.newArrayList(maintenanceOwners);
   }
 
   /** Configuration of the service being created. Optional. */
