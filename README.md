@@ -50,6 +50,20 @@ branch cm5-5.14.0-java8:
 </dependency>
 
 ````
+Origin of error:
+
+Failed: Connector could not connect: Unable to connect to cloudera: org.springframework.aop.support.AopUtils.isCglibProxyClass(Ljava/lang/Class;)Z
+
+https://stackoverflow.com/questions/34393291/unable-to-deploy-the-project-in-apache-tomcat-with-apache-cxf
+
+
+Bumping CXF from 2.7.18 to 3.2.0 fixed this issue for me.
+
+CXF needs to be bumped to major version 3, which supports Spring 4.2.x.
+Spring Boot at version 5
+
+Note that OP used CXF 2.7.18 for artifact cxf-bundle. This is what was causing the trouble.
+
 
 References to JAXB behavior changes from Java7 to Java8 documented here:
 
