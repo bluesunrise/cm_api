@@ -46,7 +46,7 @@ branch cm5-5.14.0-java8:
 <dependency>
   <groupId>com.cloudera.api</groupId>
   <artifactId>cloudera-manager-api</artifactId>
-  <version>cm5-5.14.0-java8</version>
+  <version>5.14.0.java8</version>
 </dependency>
 
 ````
