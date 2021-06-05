@@ -5,12 +5,15 @@
   <groupId>com.cloudera.api</groupId>
   <artifactId>cloudera-manager-api</artifactId>
   <name>Cloudera Manager API</name>
-  <version>5.14.0.java8</version>
+  <version>5.14.0.1.java8</version>
+<!-- java 7 -->
+<!--  <version>5.14.0-2021-05-04-java7</version>-->
 
   <properties>
     <!--<cxf.version>2.7.7</cxf.version>-->
      <cxf.version>3.2.5</cxf.version>
-    <guava.version>14.0</guava.version>
+    <!-- upgrade to 20.0 from 14.0 to be compatible with other cloudhub deps -->
+    <guava.version>20.0</guava.version>
     <jackson2.version>2.7.2</jackson2.version>
     <joda.version>2.1</joda.version>
     <junit.version>4.11</junit.version>
